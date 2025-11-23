@@ -203,7 +203,7 @@ class CausalManifoldHAR(nn.Module):
     def extract_features(self, x):
         h = self.encoder(x)
         if self.use_film and self.film is not None:
-            psi = torch.zeros(x.shape[0], 6, device=x.device)
+            psi = extract_physics_features(x)  
             params = self.film(psi).view(-1, 2, h.size(1), 1)
             gamma, beta = params[:, 0], params[:, 1]
             h = h * gamma + beta
