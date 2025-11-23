@@ -1,7 +1,7 @@
 # PADR
 (paper source) Robust Sensor-Based Activity Recognition via Physics-Aware Disentangled Representation Learning and FiLM Conditioning
 
-<p align="center"><img src='./overall_architecture.png'></p>
+<p align="center"><img src='./graphical_abstract.png'></p>
 
 This repository implements the methodology proposed in the paper "Robust Sensor-Based Activity Recognition via Physics-Aware Disentangled Representation Learning and FiLM Conditioning".
 
